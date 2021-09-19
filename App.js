@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
+import Drawer from './Drawer';
+import { NavigationContainer } from '@react-navigation/native';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Drawer/>
+      {/* <View style={styles.container}>
+        <Text>We are building react navigation using </Text>
+        <Text style={{fontWeight: 'bold'}}>react-navigation v5</Text>
+      </View> */}
+    </NavigationContainer>
   );
 }
 
